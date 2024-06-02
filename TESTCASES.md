@@ -11,9 +11,9 @@
 3. Сделать скриншоты 3 элементов со счетчиками.
 4. Закрыть страницу.
 
-![testcase_1_screenshot_1](https://github.com/angiebri/avito_test_qa/output/main/testcase_1_screenshot_1.png)
-![testcase_1_screenshot_2](https://github.com/angiebri/avito_test_qa/output/main/testcase_1_screenshot_2.png)
-![testcase_1_screenshot_3](https://github.com/angiebri/avito_test_qa/output/main/testcase_1_screenshot_3.png)
+![testcase_1_screenshot_1](https://github.com/angiebri/avito_test_qa/output/testcase_1_screenshot_1.png)
+![testcase_1_screenshot_2](https://github.com/angiebri/avito_test_qa/output/testcase_1_screenshot_2.png)
+![testcase_1_screenshot_3](https://github.com/angiebri/avito_test_qa/output/testcase_1_screenshot_3.png)
 
 **Ожидаемый результат:**
 - Все три счетчика отображаются на странице cо значением `0`
