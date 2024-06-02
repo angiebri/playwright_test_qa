@@ -1,31 +1,32 @@
 import { test, type Page } from '@playwright/test'
+import {
+  AirCounterSelector,
+  WaterCounterSelector,
+  EnergyCounterSelector,
+  mainUrl,
+  backUrl,
+} from './constants'
+import { mockData2, mockData3, mockData4, mockData5 } from './mockData'
 
 test.describe('Avito tests', () => {
-  test.afterEach('close pages', async ({ page }) => {
-    page.close()
+  const selectors = [
+    AirCounterSelector,
+    WaterCounterSelector,
+    EnergyCounterSelector,
+  ]
+
+  test.afterEach('close page', async ({ page }) => {
+    await page.close()
   })
 
-  const selectors = [
-    '.desktop-impact-items-F7T6E > div:nth-child(2)',
-    '.desktop-impact-items-F7T6E > div:nth-child(4)',
-    '.desktop-impact-items-F7T6E > div:nth-child(6)',
-  ]
-
-  const data = [
-    './data/test2.json',
-    './data/test3.json',
-    './data/test4.json',
-    './data/test5.json',
-  ]
-
-  async function mocking(page: Page, dataPath: string) {
-    await page.route(
-      'https://www.avito.ru/web/1/charity/ecoImpact/init',
-      (route) => {
-        route.fulfill({ body: JSON.stringify(require(dataPath)) })
-      }
-    )
-    await page.goto('https://www.avito.ru/avito-care/eco-impact')
+  // Можно прописать тип ответа с бекенда, но мы его достоверно не знаем, пока пусть будет any
+  async function startPageWithData(page: Page, data?: any) {
+    if (data) {
+      await page.route(backUrl, (route) => {
+        route.fulfill({ body: JSON.stringify(data) })
+      })
+    }
+    await page.goto(mainUrl)
   }
 
   async function screenshotting(page: Page, testcase: number) {
@@ -37,32 +38,37 @@ test.describe('Avito tests', () => {
     }
   }
 
-  test('test 1: make a screenshot', async ({ page }) => {
-    await page.goto('https://www.avito.ru/avito-care/eco-impact')
-    for (let i = 0; i < selectors.length; i++) {
-      const element = await page.locator(selectors[i])
-      await element.screenshot({
-        path: `./output/testcase_1_screenshot_${i + 1}.png`,
-      })
-    }
+  test('test 1: отображение счётчиков эковклада у неавторизованного/авторизованого пользователя(со значениями 0)', async ({
+    page,
+  }) => {
+    await startPageWithData(page)
+    await screenshotting(page, 1)
   })
 
-  test('test 2: mocks a init and doesnt call api', async ({ page }) => {
-    await mocking(page, data[0])
+  test('test 2: Отображение счётчиков с невалидными значениями у авторизованого пользователя', async ({
+    page,
+  }) => {
+    await startPageWithData(page, mockData2)
     await screenshotting(page, 2)
   })
 
-  test('test 3: mocks a init and doesnt call api', async ({ page }) => {
-    await mocking(page, data[1])
+  test('test 3: Преобразование единиц измерения в счётчиках у авторизованого пользователя', async ({
+    page,
+  }) => {
+    await startPageWithData(page, mockData3)
     await screenshotting(page, 3)
   })
 
-  test('test 4: mocks a init and doesnt call api', async ({ page }) => {
-    await mocking(page, data[2])
+  test('test 4: Окргуление чисел в счётчиках у авторизованого пользователя', async ({
+    page,
+  }) => {
+    await startPageWithData(page, mockData4)
     await screenshotting(page, 4)
   })
-  test('test 5: mocks a init and doesnt call api', async ({ page }) => {
-    await mocking(page, data[3])
+  test('test 5: Отображение счётчиков с большими значениями у авторизованого пользователя', async ({
+    page,
+  }) => {
+    await startPageWithData(page, mockData5)
     await screenshotting(page, 5)
   })
 })
