@@ -39,9 +39,9 @@
 3. Сделать скриншоты 3 элементов со счетчиками.
 4. Закрыть страницу.
 
-![testcase_2_screenshot_1](https://github.com/angiebri/avito_test_qa/output/main/testcase_2_screenshot_1.png)
-![testcase_2_screenshot_2](https://github.com/angiebri/avito_test_qa/output/main/testcase_2_screenshot_2.png)
-![testcase_2_screenshot_3](https://github.com/angiebri/avito_test_qa/output/main/testcase_2_screenshot_3.png)
+![testcase_2_screenshot_1](https://github.com/angiebri/avito_test_qa/blob/main/output/main/testcase_2_screenshot_1.png)
+![testcase_2_screenshot_2](https://github.com/angiebri/avito_test_qa/blob/main/output/main/testcase_2_screenshot_2.png)
+![testcase_2_screenshot_3](https://github.com/angiebri/avito_test_qa/blob/main/output/main/testcase_2_screenshot_3.png)
 
 **Ожидаемый результат:**
 
@@ -68,9 +68,9 @@
 3. Сделать скриншоты 3 элементов со счетчиками.
 4. Закрыть страницу.
 
-![testcase_3_screenshot_1](https://github.com/angiebri/avito_test_qa/output/main/testcase_3_screenshot_1.png)
-![testcase_3_screenshot_2](https://github.com/angiebri/avito_test_qa/output/main/testcase_3_screenshot_2.png)
-![testcase_3_screenshot_3](https://github.com/angiebri/avito_test_qa/output/main/testcase_3_screenshot_3.png)
+![testcase_3_screenshot_1](https://github.com/angiebri/avito_test_qa/blob/main/output/main/testcase_3_screenshot_1.png)
+![testcase_3_screenshot_2](https://github.com/angiebri/avito_test_qa/blob/main/output/main/testcase_3_screenshot_2.png)
+![testcase_3_screenshot_3](https://github.com/angiebri/avito_test_qa/blob/main/output/main/testcase_3_screenshot_3.png)
 
 **Ожидаемый результат:**
 
@@ -100,9 +100,9 @@
 3. Сделать скриншоты 3 элементов со счетчиками.
 4. Закрыть страницу.
 
-![testcase_4_screenshot_1](https://github.com/angiebri/avito_test_qa/output/main/testcase_4_screenshot_1.png)
-![testcase_4_screenshot_2](https://github.com/angiebri/avito_test_qa/output/main/testcase_4_screenshot_2.png)
-![testcase_4_screenshot_3](https://github.com/angiebri/avito_test_qa/output/main/testcase_4_screenshot_3.png)
+![testcase_4_screenshot_1](https://github.com/angiebri/avito_test_qa/blob/main/output/main/testcase_4_screenshot_1.png)
+![testcase_4_screenshot_2](https://github.com/angiebri/avito_test_qa/blob/main/output/main/testcase_4_screenshot_2.png)
+![testcase_4_screenshot_3](https://github.com/angiebri/avito_test_qa/blob/main/output/main/testcase_4_screenshot_3.png)
 
 **Ожидаемый результат:**
 
@@ -132,9 +132,9 @@
 3. Сделать скриншоты 3 элементов со счетчиками.
 4. Закрыть страницу.
 
-![testcase_5_screenshot_1](https://github.com/angiebri/avito_test_qa/output/main/testcase_5_screenshot_1.png)
-![testcase_5_screenshot_2](https://github.com/angiebri/avito_test_qa/output/main/testcase_5_screenshot_2.png)
-![testcase_5_screenshot_3](https://github.com/angiebri/avito_test_qa/output/main/testcase_5_screenshot_3.png)
+![testcase_5_screenshot_1](https://github.com/angiebri/avito_test_qa/blob/main/output/main/testcase_5_screenshot_1.png)
+![testcase_5_screenshot_2](https://github.com/angiebri/avito_test_qa/blob/main/output/main/testcase_5_screenshot_2.png)
+![testcase_5_screenshot_3](https://github.com/angiebri/avito_test_qa/blob/main/output/main/testcase_5_screenshot_3.png)
 
 **Ожидаемый результат:**
 
