@@ -1,4 +1,4 @@
-# Avito Test QA
+# Playwright Test
 
 ## Структура проекта
 - `output/`: Задание 2 - скриншоты
@@ -13,7 +13,7 @@
 
 1. Склонируйте репозиторий
     ```
-    git clone https://github.com/angiebri/avito_test_qa.git
+    git clone https://github.com/angiebri/playwright_test_qa.git
     ```
 2. Установите npm и node.js для своей ОС https://nodejs.org/en/download/package-manager/
    
